@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
+
 class App extends Component {
   state = {
     contacts: [
@@ -79,6 +80,7 @@ class App extends Component {
         {contacts.length > 1 && (
           <Filter value={filter} onFilter={this.onFilter} />
         )}
+        
         {contacts.length > 0 ? (
           <ContactList
             contacts={visibleContacts}
