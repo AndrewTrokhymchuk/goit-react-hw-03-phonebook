@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function ContactList({ contacts, deleteContact }) {
+  
   return (
     <ul>
       {contacts.map(({ id, name, number }) => (

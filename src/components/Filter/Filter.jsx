@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function Filter({ value, onFilter }) {
+  
   return (
     <label>
       Find contacts by name

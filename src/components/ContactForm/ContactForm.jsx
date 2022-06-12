@@ -20,6 +20,7 @@ class ContactForm extends Component {
 
   render() {
     const { name, number } = this.state;
+
     return (
       <form onSubmit={this.onSubmit}>
         <label>
@@ -32,6 +33,7 @@ class ContactForm extends Component {
             placeholder="John Doe"
           />
         </label>
+        
         <label>
           Number
           <input
